@@ -50,7 +50,7 @@ INSERT INTO viagem VALUES
 ('dtr2093', 12344, '18:00:00', '21:00:00', 'Sorocaba')
 
 -- Consultar, da tabela viagem, todas as horas de chegada e saída, convertidas em formato HH:mm (108) e seus destinos
-SELECT CONVERT(VARCHAR(5), hora_chegada, 108) AS hora_saida, CONVERT(VARCHAR, hora_saida, 108) AS hora_saida, destino
+SELECT CONVERT(VARCHAR(5), hora_chegada, 108) AS hora_chegada, CONVERT(VARCHAR, hora_saida, 108) AS hora_saida, destino
 FROM viagem
 
 -- Consultar, com subquery, o nome do motorista que viaja para Sorocaba
